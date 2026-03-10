@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medici | MiranoDocs</title>
+    <meta name="description"
+        content="Scopri i medici MiranoDocs, le aree cliniche e gli orari di ricevimento settimanali per prenotare in modo semplice.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header-placeholder"></header>
+
+    <main>
+        <section class="hero hero-inner">
+            <div class="container hero-content compact">
+                <h1>I medici</h1>
+                <p class="lead">Competenze complementari e presa in carico continua: consulta profili, contatti e
+                    disponibilità settimanale.</p>
+            </div>
+        </section>
+
+        <section class="section section-alt doctors-section">
+            <div class="container">
+                <div id="doctors-container" class="doctors-grid" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="hours-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="close-modal" type="button" aria-label="Chiudi finestra">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
