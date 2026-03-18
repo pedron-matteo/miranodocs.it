@@ -3,9 +3,9 @@
     --bg-strong: #e6eef2;
     --text: #182430;
     --text-muted: #4a6073;
-    --brand: #0f5d86;
-    --brand-strong: #0b4565;
-    --accent: #1e9e7a;
+    --brand: #1f8bcd;
+    --brand-strong: #105c94;
+    --accent: #46c9bb;
     --accent-soft: #d8f3ea;
     --white: #ffffff;
     --stroke: #d4e1ea;
@@ -153,7 +153,7 @@ nav a.active {
     position: absolute;
     inset: 1rem 4% 0;
     border-radius: 28px;
-    background: linear-gradient(130deg, rgba(9, 65, 97, 0.96) 0%, rgba(22, 128, 153, 0.88) 52%, rgba(20, 153, 123, 0.87) 100%);
+    background: linear-gradient(130deg, #124f7a 0%, #1f8bcd 60%, #46c9bb 100%);
     box-shadow: var(--shadow-lg);
     z-index: -1;
 }
@@ -409,7 +409,7 @@ nav a.active {
 }
 
 .doctor-specialty {
-    color: var(--brand);
+    color: var(--brand-strong);
     font-weight: 800;
     font-size: 0.78rem;
     letter-spacing: 0.08em;
@@ -476,6 +476,30 @@ nav a.active {
     margin: 0.2rem 0 0.35rem;
     font-family: "Outfit", sans-serif;
     color: var(--brand-strong);
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.9rem;
+}
+
+.location-card {
+    background: #f7fbfd;
+    border: 1px solid var(--stroke);
+    border-radius: 16px;
+    padding: 0.9rem;
+}
+
+.location-card h3 {
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 0.45rem;
+    color: var(--brand-strong);
+}
+
+.location-address {
+    color: var(--text-muted);
+    margin-bottom: 0.45rem;
 }
 
 .close-modal {
@@ -740,8 +764,46 @@ footer {
         height: 240px;
     }
 
+    .modal {
+        padding: 0.6rem;
+        align-items: flex-end;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-height: 98vh;
+        overflow-y: auto;
+        border-radius: 18px 18px 0 0;
+        padding: 1rem 1rem 1.1rem;
+    }
+
+    .modal-header h2 {
+        font-size: 1.35rem;
+    }
+
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .location-card {
+        padding: 0.85rem;
+    }
+
+    .close-modal {
+        top: 0.4rem;
+        right: 0.6rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #f2f7fa;
+    }
+
     .hours-table td {
         font-size: 0.92rem;
+        padding: 0.6rem 0;
     }
 
     .hours-table td:last-child {
